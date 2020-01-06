@@ -1,4 +1,14 @@
 			<!-- footer -->
+<<<<<<< HEAD
+			<footer class="footer tester" role="contentinfo">
+
+				<!-- copyright -->
+				<p class="copyright">
+					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
+					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+				</p>
+				<!-- /copyright -->
+=======
 			<footer class="footer container-fluid p-0" role="contentinfo">
 				<div class="background" style="background-image: url(<?php echo get_template_directory_uri();?>/img/backgrounds/vader_footer.jpg" alt="Darth Vader");></div>
 				
@@ -26,6 +36,7 @@
 							<li>placeholder for acf repeater</li>
 						</ul>
 					</div>
+>>>>>>> development
 
 			</footer>
 			<!-- /footer -->
