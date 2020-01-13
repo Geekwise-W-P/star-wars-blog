@@ -35,18 +35,22 @@ if (have_posts()): while (have_posts()) : the_post(); ?>
 		</div>
 	</article>
 	<!-- /article -->
-		<div class='row padding py-0'>
+		<div class='d-flex flex-row flex-wrap justify-content-between  py-0'>
 			<!-- post details -->
-			<span class="post-info byline-author col-xs-6 col-md-4">
-			<?php _e( 'By:', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<div class="post-info byline-date col-xs-6 col-md-4">
-				<?php the_category();?>&nbsp// <?php the_time('F j, Y'); ?>
+			<div class="col-8">
+				<span class="post-info byline-author">
+					<?php _e( 'By:', 'html5blank' ); ?> <?php the_author_posts_link(); ?>
+				</span>
+				<div class="post-info byline-date">
+					<?php the_category();?>&nbsp// <?php the_time('F j, Y'); ?>
+				</div>
 			</div>
 			<!-- /post details -->
+			<div class="col-1 align-items-end">
 			<?php if( get_field('profile_picture') ): ?>
-			<img class="profile-picture col-xs-6 col-md-4" src="<?php the_field('profile_picture'); ?>" />
+			<img class="profile-picture " src="<?php the_field('profile_picture'); ?>" />
 			<!-- Code to use the Advanced Custom Field image -->
-			
+			</div>
       <?php endif; ?>
 
 
