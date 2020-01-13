@@ -37,14 +37,16 @@ if (have_posts()): while (have_posts()) : the_post(); ?>
 	<!-- /article -->
 		<div class='d-flex flex-row flex-wrap justify-content-between  py-0'>
 			<!-- post details -->
-			<div class="col-8">
-				<span class="post-info byline-author">
-					<?php _e( 'By:', 'html5blank' ); ?> <?php the_author_posts_link(); ?>
-				</span>
-				<div class="post-info byline-date">
-					<?php the_category();?>&nbsp// <?php the_time('F j, Y'); ?>
-				</div>
-			</div>
+			<section class="conatiner">
+				<div class="col-20">
+					<span class="post-info byline-author justify-content-left justify-content-around">
+						<?php _e( 'By:', 'html5blank' ); ?> <?php the_author_posts_link(); ?>
+					</span>
+					<div class="post-info byline-date">
+						<?php the_category();?>&nbsp// <?php the_time('F j, Y'); ?>
+					</div>
+				</div>	
+			</section>
 			<!-- /post details -->
 			<div class="col-1 align-items-end">
 			<?php if( get_field('profile_picture') ): ?>
